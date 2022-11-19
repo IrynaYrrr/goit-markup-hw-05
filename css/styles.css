@@ -119,6 +119,10 @@ body {
   font-size: 14px;
   line-height: 1.17;
   color: var(--black-color);
+  transition-property: color, transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
 }
 
 .header-nav-link:hover,
@@ -140,6 +144,10 @@ body {
   font-size: 14px;
   line-height: 1.17;
   color: var(--grey-color);
+  transition-property: color, transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
 }
 
 .header-contacts-link:hover,
@@ -172,14 +180,13 @@ body {
   align-items: stretch;
 }
 
-.header-mail-icon {
+.header-contacts-icon {
   margin-right: 10px;
   fill: currentColor;
-}
-
-.header-phone-icon {
-  margin-right: 10px;
-  fill: currentColor;
+  transition-property: fill, transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
 }
 
 
@@ -233,6 +240,10 @@ body {
   height: 50px;
   color: var(--white-text-color);
   background-color: var(--blue-color);
+  transition-property: background-color, transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
 }
 
 .hero-btn:hover,
@@ -359,15 +370,27 @@ body {
   height: 100%;
   border-radius: 50%;
   color: var(--icon-grey-color);
+  transition-property: color, transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
 }
 
 .employee-soc-icon {
   fill: currentColor;
+  transition-property: fill, transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
 }
 
 .employee-soc-link:hover,
 .employee-soc-link:focus {
   background-color: var(--blue-color);
+  transition-property: background-color, transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
 }
 
 .employee-soc-link:hover .employee-soc-icon {
