@@ -119,6 +119,7 @@ body {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.17;
+  padding: 32px 0 32px 0;
   color: var(--black-color);
   transition-property: color;
   transition-duration: 250ms;
@@ -154,8 +155,26 @@ body {
   color: var(--blue-color);
 }
 
+.header-nav-item {
+  display: flex;
+  position: relative;
+}
+
 .current {
   color: var(--blue-color);
+}
+
+.current::after {
+  content: '';
+  color: currentColor;
+  border-style: solid;
+  display: block;
+  width: 100%;
+  border-radius: 2px;
+  height: 4px;
+  bottom: -1px;
+  left: 0;
+  position: absolute;
 }
 
 .header-contacts-item {
