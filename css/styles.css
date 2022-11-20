@@ -122,7 +122,6 @@ body {
   transition-property: color, transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0;
 }
 
 .header-nav-link:hover,
@@ -147,28 +146,11 @@ body {
   transition-property: color, transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0;
 }
 
 .header-contacts-link:hover,
 .header-contacts-link:focus {
   color: var(--blue-color);
-}
-
-.header-contacts-link:hover .header-phone-icon {
-  fill: var(--blue-color);
-}
-
-.header-contacts-link:focus .header-phone-icon {
-  fill: var(--blue-color);
-}
-
-.header-contacts-link:hover .header-mail-icon {
-  fill: var(--blue-color);
-}
-
-.header-contacts-link:focus .header-mail-icon {
-  fill: var(--blue-color);
 }
 
 .current {
@@ -186,7 +168,22 @@ body {
   transition-property: fill, transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0;
+}
+
+.header-contacts-link:hover .header-contacts-icon {
+  fill: var(--blue-color);
+}
+
+.header-contacts-link:focus .header-contacts-icon {
+  fill: var(--blue-color);
+}
+
+.header-contacts-link:hover .header-contacts-icon {
+  fill: var(--blue-color);
+}
+
+.header-contacts-link:focus .header-contacts-icon {
+  fill: var(--blue-color);
 }
 
 
@@ -243,7 +240,6 @@ body {
   transition-property: background-color, transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0;
 }
 
 .hero-btn:hover,
@@ -369,11 +365,16 @@ body {
   width: 100%;
   height: 100%;
   border-radius: 50%;
+  background-color: var(--white-text-color);
   color: var(--icon-grey-color);
-  transition-property: color, transform;
+  transition-property: color, background-color transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0;
+}
+
+.employee-soc-link:hover,
+.employee-soc-link:focus {
+  background-color: var(--blue-color);
 }
 
 .employee-soc-icon {
@@ -381,16 +382,6 @@ body {
   transition-property: fill, transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0;
-}
-
-.employee-soc-link:hover,
-.employee-soc-link:focus {
-  background-color: var(--blue-color);
-  transition-property: background-color, transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0;
 }
 
 .employee-soc-link:hover .employee-soc-icon {
@@ -428,15 +419,21 @@ body {
   border-radius: 4px;
   border: 1px solid var(--icon-grey-color);
   color: var(--icon-grey-color);
-}
-
-.our-clients-icon {
-  fill: currentColor;
+  transition-property: color, border transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .our-clients-link:hover,
 .our-clients-link:focus {
   border-color: var(--blue-color);
+}
+
+.our-clients-icon {
+  fill: currentColor;
+  transition-property: fill, transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .our-clients-link:hover .our-clients-icon {
@@ -537,15 +534,21 @@ body {
   border-radius: 50%;
   background-color: var(--white-transparent-color);
   color: var(--white-text-color);
-}
-
-.join-soc-icon {
-  fill: currentColor;
+  transition-property: color, background-color transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .join-soc-link:hover,
 .join-soc-link:focus {
   background-color: var(--blue-color);
+}
+
+.join-soc-icon {
+  fill: currentColor;
+  transition-property: fill transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .join-soc-link:hover .join-soc-icon {
@@ -579,6 +582,9 @@ body {
   cursor: pointer;
   background-color: var(--background-light-color);
   color: var(--black-color);
+  transition-property: background-color, color, box-shadow transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .select-btn:hover {
@@ -606,6 +612,9 @@ body {
 .select-project-link {
   display: block;
   text-decoration: none;
+  transition-property: box-shadow, transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .select-project-link:hover {
