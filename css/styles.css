@@ -26,6 +26,7 @@
   --icon-grey-color: #AFB1B8;
   --gradient: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
   --white-transparent-color: rgba(255, 255, 255, 0.1);
+  --bg-transparent-color: rgba(47, 48, 58, 0.8);
 }
 
 h1,
@@ -309,6 +310,28 @@ body {
 
 .our-projects-item {
   flex-basis: calc((100% - 60px) / 3);
+  position: relative;
+}
+
+.projects-label-wrap {
+  width: 370px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-transparent-color);
+  position: absolute;
+  bottom: 0px;
+}
+
+.our-projects-label {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  font-style: normal;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-text-color);
 }
 
 .our-team {
